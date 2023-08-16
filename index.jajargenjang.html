@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Luas dan Keliling Bangun Jajargenjang</title>
+  </head>
+  <body>
+    <!-- Title -->
+      <h1 class="title">Welcome to Katik</h1>
+      <p class="subtitle">Hai Sobat, Selamat datang di Katik :] <br>
+        Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan
+        keliling bangun datar
+      </p>
+       <!-- Navigasi -->
+      <header>
+        <nav>
+            <div class="menu">
+                <a href="index-segitiga.html" class="menu-triangle">Segitiga</a>
+                <a href="index.jajargenjang.html" class="menu-parallelogram">Jajar Genjang</a>
+            </div>
+        </nav>
+      </header>
+    <!-- card -->
+    <main>
+      <section id="luas-parallelogram">
+        <div class="card">
+            <div>
+                <h2 class="luas-jajargenjang">Luas Jajargenjang</h2>
+               </div>
+              <div class="img">
+                <img src="img/jajar-genjang.jpeg" alt="triangle" />
+              </div>
+              <p>Rumus Luas Jajargenjang yaitu :</p>
+              <div class="rumus">
+                <p>L = A * T</p>
+              </div>
+              <div class="keterangan">
+                <p>Di mana :</p>
+                <p>L = Luas</p>
+                <p>A = Panjang Alas</p>
+                <p>T = Tinggi</p><br>
+              </div>
+              <div class="form-hitung">
+                <hr><br>
+                <h1 class="form-hitung-luas">Hitung Luas Jajargenjang</h1><br>
+                <form action="" class="form-place">
+                   <label>Alas:</label>
+                     <input type="number" id="alas-j" name="alas-j"><br>
+                     <label>Tinggi:</label>
+                     <input type="number" id="tinggi-j" name="tinggi-j"><br>
+                     <label>Luas Jajargenjang:</label>
+                     <input type="text" id="luas-j" name="luas-j" readonly><br>
+                </form>
+                <input class="button-hasil" type="button" value="Hitung" onclick="hitungLuasJajargenjang()">
+                <input class="button-reset" type="reset" value="Reset" onclick="reset()">
+              </div>
+        </div>
+      </section>
+      <section id="keliling-parallelogram">
+        <div class="card">
+            <div>
+                <h2 class="keliling-jajargenjang">Keliling Jajargenjang</h2>
+               </div>
+              <div class="img">
+                <img src="img/jajar-genjang.jpeg" alt="triangle" />
+              </div>
+              <p>Rumus Keliling Jajargenjang yaitu :</p>
+              <div class="rumus">
+                <p>K = 2 * (SisiAB + SisiBC)</p>
+              </div>
+              <div class="keterangan">
+                <p>Di mana :</p>
+                <p>K = Keliling</p>
+                <p>Sisi AB = Sisi Horizontal</p>
+                <p>Sisi BC = Sisi Vertikal </p><br>
+              </div>
+              <div class="form-hitung">
+                <hr><br>
+                <h1 class="form-hitung-luas">Hitung Keliling Jajargenjang</h1><br>
+                <form action="" class="form-place">
+                     <label>Sisi Horizontal:</label>
+                     <input type="number" id="sisi-ab" name="sisi-ab"><br>
+                     <label>Sisi Vertikal:</label>
+                     <input type="number" id="sisi-bc" name="sisi-bc"><br>
+                     <label>Keliling Jajargenjang:</label>
+                     <input type="text" id="keliling-j" name="keliling-j" readonly><br>
+                </form>
+                <input class="button-hasil" type="button" value="Hitung" onclick="hitungKelilingJajarGenjang()">
+                <input class="button-reset" type="button" value="Reset" onclick="reset()">
+              </div>
+        </div> 
+      </section>
+      <script src="js/index.js"></script>
+    </main>
+  </body>
+</html>
